@@ -33,5 +33,5 @@ Then push the repo upstream to OpenShift
 
 That's it, you can now checkout your application at:
 
-	http://piwik-$yourlogin.rhcloud.com
+	http://piwik-$yournamespace.rhcloud.com
 
