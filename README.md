@@ -13,11 +13,11 @@ Create an account at http://openshift.redhat.com/
 
 Create a PHP application
 
-	rhc-create-app -a piwik -t php-5.3 -l $USERNAME
+	rhc app create -a piwik -t php-5.3
 
 Add mysql support to your application
     
-	rhc-ctl-app -a piwik -e add-mysql-5.1 -l $USERNAME
+	rhc app cartridge add -a piwik -c mysql-5.1
 Make a note of the username, password, and host name as you will need to use these to complete the Piwik installation on OpenShift
 
 Add this upstream Piwik quickstart repo
